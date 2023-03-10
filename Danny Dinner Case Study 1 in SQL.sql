@@ -97,8 +97,8 @@ FROM [PortfolioProject].[dbo].[sales]
 GROUP BY customer_id;
 
 -- Answer is A 6
---			 B 6
---			 C 3
+--	     B 6
+--	     C 3
 
 -----------------------------------------------------------------------
 
@@ -129,10 +129,10 @@ WHERE order_date = '2021-01-01'
 ORDER BY order_date;
 
 -- Answer is A 2021-01-01 sushi
---			 A 2021-01-01 curry
---			 B 2021-01-01 curry
---			 C 2021-01-01 ramen
---			 C 2021-01-01 ramen
+--	     A 2021-01-01 curry
+--	     B 2021-01-01 curry
+--	     C 2021-01-01 ramen
+--	     C 2021-01-01 ramen
 			
 -------------------------------------------------------------------------------------------------
 
@@ -161,12 +161,12 @@ WHERE product_id = 3
 GROUP BY customer_id;
 
 -- Fisrt, Answer is ramen 8
---					curry 4
---					sushi 3
+--		    curry 4
+--		    sushi 3
 
 -- Second, Answer is A 3
---					 B 2
---					 C 3
+--		     B 2
+--		     C 3
 
 ---------------------------------------------------------------------------------------------------
 
@@ -199,10 +199,10 @@ WHERE rank = 1;
 
 -- Answer is customer_id product_name order_count rank
 --				A           ramen		3			1
---				B			sushi		2			1
---				B			curry		2			1
---				B			ramen		2			1
---				C			ramen		3			1
+--				B	    sushi		2			1
+--				B	    curry		2			1
+--				B	    ramen		2			1
+--				C	    ramen		3			1
 
 -----------------------------------------------------------------------------------
 
@@ -232,7 +232,7 @@ FROM CTE_first_order
 WHERE row_id = 1
 
 -- Answer is A curry 2021-01-07
---			 B sushi 2021-01-11
+--	     B sushi 2021-01-11
 
 -------------------------------------------------------------------------------------------------
 
@@ -285,8 +285,8 @@ GROUP BY sales.customer_id;
 
 -- Answer:
 -- customer_id	total_items	total_price
---		A			2			25
---		B			3			40
+--	A	    2		     25
+--	B	    3		     40
 
 -----------------------------------------------------------------------------------------
 
@@ -311,9 +311,9 @@ GROUP BY sales.customer_id;
 
 --Answer:
 --		customer_id	  points
---			A		    860	
---			B			940
---			C			360
+--			A	    860	
+--			B	    940
+--			C	    360
 
 --------------------------------------------------------------------------------------
 
@@ -340,8 +340,8 @@ ORDER BY sales.customer_id;
 
 --Answer:
 --	customer_id	 points
---		A		  1370
---		B		  940
+--	    A		  1370
+--	    B		  940
 
 ----------------------------------------------------------------------------------------------
 
